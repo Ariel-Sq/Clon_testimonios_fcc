@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 18px;
+  background-color: #f5f6f7;
+}
+
+h1 {
+  max-width: 940px;
+  font-size: 2.5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 40px 0;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenedor-principal {
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 428px) {
+  html, body {
+    font-size: 16px; /* Reducir el tamaño de fuente para pantallas pequeñas */
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 2em; /* Reducir el tamaño de fuente del encabezado para pantallas pequeñas */
+  }
+
+  .contenedor-principal {
+    min-height: auto; /* Ajustar la altura para pantallas pequeñas según sea necesario */
+  }
+}
